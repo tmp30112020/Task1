@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace IndepententFilesReader
 {
-    class Student : IParsedItem
+    public class Student : IParsedItem
     { 
         public string Name { get; set; }
         public string Degree { get; set; }

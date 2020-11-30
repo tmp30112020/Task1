@@ -1,6 +1,6 @@
 ﻿namespace IndepententFilesReader
 {
-    class Person : IParsedItem
+    public class Person : IParsedItem
     {
         public string Name { get; set; }
         public string Gender { get; set; }

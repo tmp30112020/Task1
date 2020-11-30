@@ -4,7 +4,7 @@ using System.IO;
 
 namespace IndepententFilesReader
 {
-    class FileProcessor<T> where T : IParsedItem, new()
+    public class FileProcessor<T> where T : IParsedItem, new()
     {
         string filePath;
         string ignoreString = new string('-', 10); // TODO: Ignore string get from config
@@ -18,7 +18,7 @@ namespace IndepententFilesReader
             this.filePath = filePath;
             this.separator = separator;
             if (!File.Exists(filePath))
-                Console.WriteLine($"Cant find file by path: {filePath}");
+                Console.WriteLine($"Cant find file by path: {filePath}"); // TODO: Change CW to Debug or LOG
         }
 
         public bool ProcessFile()
