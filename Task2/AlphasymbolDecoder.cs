@@ -1,6 +1,6 @@
 ﻿namespace Task2
 {
-    class AlphasymbolDecoder : ICharDecoder
+    public class AlphasymbolDecoder : ICharDecoder
     {
         public int Decode(char character)
         {

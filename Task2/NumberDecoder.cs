@@ -2,7 +2,7 @@
 
 namespace Task2
 {
-    class NumberDecoder : ICharDecoder
+   public class NumberDecoder : ICharDecoder
     {
         public int Decode(char character)
         {
